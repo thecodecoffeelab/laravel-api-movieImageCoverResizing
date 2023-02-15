@@ -23,6 +23,10 @@
         "nunomaduro/collision": "^5.10",
         "phpunit/phpunit": "^9.5.10"
     },
+    "post-install-cmd": [
+     "php artisan clear-compiled",
+     "chmod -R 777 public/"
+ ],
     "autoload": {
         "psr-4": {
             "App\\": "app/",
